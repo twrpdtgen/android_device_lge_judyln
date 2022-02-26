@@ -1,0 +1,16 @@
+# mount point       fstype    device                                                                flags
+/system           ext4     /dev/block/bootdevice/by-name/system       flags=display="System";backup=1;slotselect
+/data             ext4     /dev/block/bootdevice/by-name/userdata     flags=display="Data"
+/sdcard1          vfat     /dev/block/mmcblk0p1                       flags=display="Sdcard1"
+/misc             emmc     /dev/block/bootdevice/by-name/misc         flags=display="Misc";backup=1;flashimg=1
+/firmware_mnt     vfat     /dev/block/bootdevice/by-name/modem        flags=display="Firmware_mnt";slotselect
+/ftm              emmc     /dev/block/bootdevice/by-name/ftm          flags=display="Ftm"
+/oem              ext4     /dev/block/bootdevice/by-name/oem          flags=display="Oem";slotselect
+/encrypt          raw      /dev/block/bootdevice/by-name/encrypt      flags=display="Encrypt"
+/eksst            raw      /dev/block/bootdevice/by-name/eksst        flags=display="Eksst"
+/persist-lg       ext4     /dev/block/bootdevice/by-name/drm          flags=display="Persist-lg"
+/els              ext4     /dev/block/bootdevice/by-name/els          flags=display="Els"
+/fota             ext4     /dev/block/bootdevice/by-name/fota         flags=display="Fota"
+/carrier          ext4     /dev/block/bootdevice/by-name/carrier      flags=display="Carrier"
+/absolute         ext4     /dev/block/bootdevice/by-name/persdata     flags=display="Absolute"
+/OP               ext4     /dev/block/bootdevice/by-name/OP           flags=display="Op";slotselect
